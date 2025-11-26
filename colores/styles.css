@@ -1,0 +1,92 @@
+/*Estilos generales*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #2B807B;
+    text-align: center;
+}
+
+.centrar-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor {
+    height: 220px;
+    width: 450px;
+    background-color: white;
+    border: 5px solid black;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/*Texto*/
+#color {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+/*Boton*/
+
+button {
+    font-size: 30px;
+    color: white;
+    border-radius: 20px;
+    background-color: #008CBA;
+    margin:15px;
+    padding: 10px 30px;
+    border: 3px solid #008CBA;
+    user-select: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #05455A;
+    border: 3px solid #05455A;
+}
+
+.mitad {
+    height: 50vh;
+    width: 100%;
+}
+
+#anterior {
+    background-color: #2B807B; /* color inicial */
+}
+
+#actual {
+    background-color: #2B807B; /* color inicial */
+    border-top: 3px solid black;
+}
+
+/* El contenedor queda arriba de las divisiones */
+#contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+#titulo {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #FFA726; /* color inicial distinto */
+    color: white;
+    border-radius: 10px;
+    z-index: 20;
+    transition: background-color 0.5s;
+}
+
